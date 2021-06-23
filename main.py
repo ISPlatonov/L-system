@@ -2,10 +2,11 @@ import turtle as ttl
 
 ttl.color('green')
 ttl.speed(0)
-ttl.setworldcoordinates(-1, -1, 2000, 2000)
+ttl.setworldcoordinates(0, 0, 2000, 2000)
 ttl.setheading(45)
 ttl.delay(0)
 ttl.tracer(0, 0)
+ttl.hideturtle()
 
 positions = list()
 angles = list()
@@ -47,7 +48,7 @@ else:
         ns = str()
         for ci in range(len(s)):
             ns += rules[s[ci]]
-            print('{0} -> {1}'.format(s[ci], rules[s[ci]]))
+            #print('{0} -> {1}'.format(s[ci], rules[s[ci]]))
         s = ns
 
     for c in s:
